@@ -1,0 +1,108 @@
+# love.letter
+for my baby 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>I love you darling 💖</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", sans-serif;
+      background: linear-gradient(135deg, #ffafbd, #ffc3a0);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+    }
+    .container {
+      text-align: center;
+      color: white;
+    }
+    .button {
+      background: #ff4b5c;
+      color: white;
+      border: none;
+      padding: 15px 30px;
+      font-size: 20px;
+      border-radius: 30px;
+      cursor: pointer;
+      box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+      transition: all 0.3s ease;
+    }
+    .button:hover {
+      transform: scale(1.1);
+      background: #ff1e40;
+    }
+    .letter {
+      display: none;
+      max-width: 600px;
+      max-height: 80vh;
+      overflow-y: auto;
+      background: rgba(255,255,255,0.95);
+      color: #333;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+      line-height: 1.6;
+      font-size: 16px;
+      text-align: left;
+    }
+    .letter h2 {
+      text-align: center;
+      color: #ff4b5c;
+    }
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <button class="button" onclick="showLetter()">I love you darling 💖</button>
+    <div class="letter" id="letter">
+      <h2>Happy Monthsary, Baby! 🩷</h2>
+      <p>
+        I love you sobra, and I hope you always feel that kahit minsan medyo sablay or magulo yung way ko mag-express.
+        Alam ko na sometimes I can be too much, and I’m really sorry for that. Pero please, wag mong isipin na I don’t
+        appreciate you — kasi I'm so thankful sa lahat ng ginagawa mo. Kahit ‘di ko laging masabi, I notice it and I’m
+        grateful for you.
+      </p>
+      <p>
+        Thank you kasi andyan ka palagi, lalo na when things get heavy for me. Thank you for staying kahit minsan
+        napu-push kita palayo. Alam mo, I’m really trying my best to improve and be better for you, kasi ayokong
+        maramdaman mo na may mas better pa than me (hindi pwede walang mas better — me lang ang para sa baby ko 😠).
+      </p>
+      <p>
+        I’m always proud of you, love — not just for the big things, but also for the little achievements you don’t even
+        notice. I see them, and I’m proud of you for every single step you take. You’re doing amazing, and I’ll always
+        be here to cheer for you and support you.
+      </p>
+      <p>
+        And kahit may mga times na nag-aaway tayo or may miscommunication, I hope you never get tired of fixing it with
+        me. I’d rather go through the hard parts with you than have it easy with someone else.
+      </p>
+      <p>
+        Love, thank you din for supporting me in serving. Ikaw yung first guy na never akong pinigilan or questioned it —
+        you just stayed and supported me, and that means so much. Naiimagine ko tuloy tayo in the future, serving God
+        together, and it makes me so happy and excited.
+      </p>
+      <p>
+        I love you so much, baby. Thank you for loving me the way you do and for choosing me every single day 💋🩷
+      </p>
+    </div>
+  </div>
+
+  <script>
+    function showLetter() {
+      document.querySelector('.button').style.display = 'none';
+      const letter = document.getElementById('letter');
+      letter.style.display = 'block';
+      letter.style.animation = "fadeIn 1s ease forwards";
+    }
+  </script>
+</body>
+</html>
